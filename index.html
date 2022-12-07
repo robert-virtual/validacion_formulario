@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <form
+      id="formcursos"
+      method="post"
+      action="http://localhost:3000/api/cursos/new"
+    >
+      <h2 class="text-blueviolet">Formulario Cursos</h2>
+      <label>
+        <span>Nombre:</span>
+        <input
+          minlength="3"
+          required
+          maxlength="50"
+          type="text"
+          placeholder="Nombre"
+          name="nombre"
+        />
+        <span class="text-red"></span>
+      </label>
+      <label>
+        <span>Precio:</span>
+        <input
+          min="1"
+          type="number"
+          required
+          placeholder="Precio"
+          name="precio"
+        />
+        <span class="text-red"></span>
+      </label>
+      <label>
+        <span>Descripcion:</span>
+        <textarea
+          maxlength="255"
+          required
+          placeholder="Descripcion"
+          name="descripcion"
+        ></textarea>
+        <span class="text-red"></span>
+      </label>
+      <label>
+        <span>Duracion:</span>
+        <input
+          min="1"
+          type="number"
+          required
+          placeholder="Duracion"
+          name="duracion"
+        />
+        <span class="text-red"></span>
+        <span class="text-gray">horas</span>
+      </label>
+      <button>Enviar</button>
+    </form>
+    <script src="js/validaciones.js"></script>
+  </body>
+</html>

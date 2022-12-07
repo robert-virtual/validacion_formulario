@@ -1,0 +1,53 @@
+* {
+  font-family: sans-serif;
+}
+
+form {
+  margin:auto;
+  box-shadow: 0 0 6px gray;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 90%;
+}
+form label {
+  display: block;
+  margin-top: 1rem;
+  /* color: gray; */
+}
+
+.text-blueviolet {
+  color: blueviolet;
+}
+.text-red {
+  color: red;
+}
+.text-gray {
+  color: gray;
+}
+
+form button {
+  display: block;
+  background: none;
+  cursor: pointer;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: auto;
+  margin-top: 0.5rem;
+  transition: all 0.5s;
+  width: 90%;
+}
+form button:hover {
+  transform: scale(1.1);
+}
+form button:active {
+  transform: scale(0.9);
+}
